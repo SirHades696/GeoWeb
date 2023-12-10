@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "leaflet-ajax": "^2.1.0",
+    "leaflet-groupedlayercontrol": "^0.6.1"
+  }
+}

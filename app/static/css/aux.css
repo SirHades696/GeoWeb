@@ -1,0 +1,87 @@
+.navbar {
+  height: 70px;
+  padding: 10px;
+}
+
+.head {
+  margin-top: 70px;
+}
+
+#map {
+  margin-top: 18px;
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  /*background: linear-gradient(-45deg,#164863, #272727, #2196f3, #4b4c53); */
+  background: linear-gradient(-45deg,#2196f3, #272727, #164863, #4b4c53);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.card, .card-content {
+  /*background: linear-gradient(-45deg,#164863, #272727, #2196f3, #4b4c53); */
+  background: linear-gradient(-45deg,#2196f3, #272727, #164863, #4b4c53);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  height: calc(100vh - 55px);
+  overflow-y: hidden;
+}
+
+p, h1, b {
+  color: white;
+}
+
+.leaflet-control-layers-group-name {
+  font-weight: bold;
+}
+
+
+.map-container {
+  position: relative;
+  z-index: 1;
+}
+
+.floating-image-container {
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left:0;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.floating-image-container h2 {
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: black;
+  max-width: 353px; 
+  text-align: justify;
+}
+
+[id^='legend'] {
+  display: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

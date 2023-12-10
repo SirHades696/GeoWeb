@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card" style="padding:150px;">
+    <div class="card-content">
+        <div class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="{{ url_for('static', filename='images/sir.png')}}" alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="media-content">
+                <p class="title is-4 has-text-info-light">Adonai Emmanuel Nicanor Bautista</p>
+                <p class="subtitle is-6 has-text-info-light">@SirHades696</p>
+            </div>
+        </div>
+        <div class="content has-text-info-light">
+            Construyo aplicaciones con Python en forma dinámica utilizando Base de Datos Relaciones y también NoSQL como
+            FireBase, además me encanta la programación de Bots en Telegram y el desarrollo de microservicios con Flask.
+            🐍
+            Tengo un alto interés en Sistemas de Información Geográfica donde he desarrollado herramientas
+            especializadas en análisis espacial tanto para ArcGIS como para QGIS, manipulando datos vectoriales e
+            imágenes ráster. 🌎
+            <p class="has-text-link">#Python #Flask #Leaflet #CSS #Javascript #Geoserver</p>
+            <br>
+            <script>
+                function mostrarFechaHora() {
+                  var fechaHoraActual = new Date();
+                  var opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+                  var formatoFechaHora = fechaHoraActual.toLocaleDateString('es-ES', opciones);
+                  document.getElementById('fechaHora').innerText = formatoFechaHora;
+                }
+                window.onload = function() {
+                  mostrarFechaHora();
+                  setInterval(mostrarFechaHora, 1000);
+                };
+              </script>
+            <time datetime="2023-12-12"><p id="fechaHora"></p></time>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

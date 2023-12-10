@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="map" class="map-container"></div>
+<script src="{{ url_for('static', filename='js/map/mapa.js')}}"></script>
+<div id="legend1">
+    <div class="floating-image-container">
+        <h2 class="is-size-5 has-text-success has-text-centered">Análisis de la demanda (Polígonos)</h2>
+        <p class="desc">Adultos mayores (65 años y más) que tienen acceso al servicio de salud en rango de 1.5 km.</p>
+        <br>
+        <img src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&STRICT=false&style=accesibilidad_espacial:LZMT_POLIGONOS_VMC_EJ1"
+            alt="" width="200" height="200">
+    </div>
+</div>
+<div id="legend2">
+    <div class="floating-image-container">
+        <h2 class="is-size-5 has-text-success has-text-centered">Análisis de la demanda (Puntos)</h2>
+        <p class="desc">Adultos mayores (65 años y más) que tienen acceso al servicio de salud en rango de 1.5 km.</p>
+        <br>
+        <img src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&STRICT=false&style=accesibilidad_espacial:LZMT_PUNTOS_VMC_EJ2"
+            alt="" width="200" height="200">
+    </div>
+</div>
+<div id="legend3">
+    <div class="floating-image-container">
+        <h2 class="is-size-5 has-text-success has-text-centered">Análisis de la oferta (Puntos)</h2>
+        <p class="desc">Flujos de adultos mayores que capta cada unidad de servicio, en un rango de 0 a 150 personas.</p>
+        <br>
+        <img src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&STRICT=false&style=accesibilidad_espacial:CLUES_RD1"
+            alt="" width="200" height="200">
+    </div>
+</div>
+
+{% endblock %}
