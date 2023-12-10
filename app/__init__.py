@@ -7,9 +7,11 @@ def create_app():
     from . import index
     from . import map
     from . import contact
+    from . import metadata
     
     app.register_blueprint(index.bp)
     app.register_blueprint(map.bp)
     app.register_blueprint(contact.bp)
+    app.register_blueprint(metadata.bp)
     
     return app
