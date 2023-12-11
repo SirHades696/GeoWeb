@@ -114,15 +114,12 @@ article h2 {
 figure {
   margin: 0;
   padding: 0;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 3;
   overflow: hidden;
 }
 
 article img {
-  max-width: 100%;
-  transform-origin: center;
-  transform: scale(var(--img-scale));
-  transition: transform 0.4s ease-in-out;
+  margin:5px;
 }
 
 .article-body {

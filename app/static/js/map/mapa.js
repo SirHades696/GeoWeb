@@ -54,7 +54,7 @@ function onEachFeature(useCustomMarker, propertiesKeys, mensajes) {
         var msg = mensajes[i];
 
         if (feature.properties[key]) {
-          popupContent += msg + feature.properties[key] + "<br>";
+          popupContent += "<b class='has-text-link'>" + msg + "</b>" + feature.properties[key] + "<br>";
         }
       }
       if (popupContent !== "") {
