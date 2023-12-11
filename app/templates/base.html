@@ -10,14 +10,15 @@
   <title>GeoPortal - Unidades de Salud</title>
   <link rel="icon" href="{{ url_for('static', filename='images/earth2.png')}}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/aux.css')}}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/node_modules/bulma/css/bulma.min.css')}}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/node_modules/bulma/css/bulma.min.css')}}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='js/leaflet/leaflet.css')}}" />
-  <link rel="stylesheet" src="{{ url_for('static', filename='js/node_modules/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css')}}"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet"
+    src="{{ url_for('static', filename='js/node_modules/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css')}}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <script src="{{ url_for('static', filename='js/leaflet/leaflet.js')}}"></script>
   <script src="{{ url_for('static', filename='js/node_modules/leaflet-ajax/dist/leaflet.ajax.js')}}"></script>
-  <script src="{{ url_for('static', filename='js/node_modules/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js')}}"></script>
-
+  <script
+    src="{{ url_for('static', filename='js/node_modules/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js')}}"></script>
 </head>
 
 <body class="has-navbar-fixed-top">
@@ -31,18 +32,23 @@
         </div>
         <div id="navBackgroundDemo1" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item" href="{{ url_for('index.index')}}"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Inicio</a>
-            <a class="navbar-item" href="{{ url_for('extra.extra')}}"><i class="fas fa-bullhorn"></i>&nbsp;&nbsp;&nbsp;Sitios de Interés</a>
-            <a class="navbar-item" href="{{ url_for('contact.contact')}}"><i class="far fa-address-card"></i>&nbsp;&nbsp;&nbsp;Acerca de...</a>
+            <a class="navbar-item" href="{{ url_for('index.index')}}"><i
+                class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Inicio</a>
+            <a class="navbar-item" href="{{ url_for('extra.extra')}}"><i
+                class="fas fa-bullhorn"></i>&nbsp;&nbsp;&nbsp;Sitios de Interés</a>
+            <a class="navbar-item" href="{{ url_for('contact.contact')}}"><i
+                class="far fa-address-card"></i>&nbsp;&nbsp;&nbsp;Acerca de...</a>
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="field is-grouped">
                 <p class="control">
-                 <a class="button is-info is-inverted is-outlined" href="{{ url_for('metadata.metadata')}}"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;&nbsp;Metadatos</a>
+                  <a class="button is-info is-inverted is-outlined" href="{{ url_for('metadata.metadata')}}"><i
+                      class="fas fa-file-alt"></i>&nbsp;&nbsp;&nbsp;Metadatos</a>
                 </p>
                 <p class="control">
-                 <a class="button is-info is-outlined" href="{{ url_for('map.map')}}"><i class="fas fa-map-marked-alt"></i>&nbsp;&nbsp;&nbsp;Geovisor</a>
+                  <a class="button is-info is-outlined" href="{{ url_for('map.map')}}"><i
+                      class="fas fa-map-marked-alt"></i>&nbsp;&nbsp;&nbsp;Geovisor</a>
                 </p>
               </div>
             </div>
@@ -54,5 +60,5 @@
   <main>
     {% block content %}{% endblock %}
   </main>
- </body>
- </html>
+</body>
+</html>
