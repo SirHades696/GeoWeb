@@ -14,7 +14,7 @@
 }
 
 html, body {
-  height: 100%;
+  height: auto;
   width: 100%;
   /*background: linear-gradient(-45deg,#164863, #272727, #2196f3, #4b4c53); */
   background: linear-gradient(-45deg,#2196f3, #272727, #164863, #4b4c53);
@@ -150,7 +150,6 @@ article a .icon {
   transition: all 0.3s;
 }
 
-/* using the has() relational pseudo selector to update our custom properties */
 article:has(:hover, :focus) {
   --img-scale: 1.1;
   --title-color: #28666e;
@@ -158,11 +157,6 @@ article:has(:hover, :focus) {
   --link-icon-opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-
-
-/************************ 
-Generic layout (demo looks)
-**************************/
 
 *,
 *::before,
@@ -223,4 +217,18 @@ Generic layout (demo looks)
 
 .all-cards{
   padding: 48px 0;
+}
+
+.iframe-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+
+iframe {
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
